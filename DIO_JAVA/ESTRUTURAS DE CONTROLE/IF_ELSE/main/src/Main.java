@@ -3,23 +3,22 @@ import java.util.Scanner;
 public class Main {
     public static void main (String[] args) {
        var scanner = new Scanner(System.in);
-       System.out.println("Informe seu nome");
-       var name = scanner.nextLine();
-       System.out.println("Informe seu idade");
+       System.out.println("Informe seu nome:");
+       var name = scanner.next();
+       System.out.println("Informe sua idade:");
        var age = scanner.nextInt();
-       System.out.println("voce é emancipado?");
+       System.out.println("Vc é emancipado? (s/n)");
        var isEmancipated = scanner.next().equalsIgnoreCase("s");
 
-        boolean isEmancipated1 = isEmancipated;
-        if (age >= 18) {
-            System.out.printf("%s tem %s anos, voce pode dirigir \n", name, age);
-        } else if (age >=16 && isEmancipated) {
-            System.out.printf("%s mesmo com %s, voce pode dirigir sendo emancipado \n", name, age);
-    }else{
-            System.out.printf("%s tem %d anos, voce nao pode dirigir \n", name, age);
-        }
+       if (age >= 18){
+           System.out.printf("%s vc tem %s anos, entao pode dirigir",name,age);
 
-        System.out.println("Fim da execução");
+       } else if (age >= 16 && isEmancipated){
+           System.out.printf("%s vc tem %s e é Emancipato, logo vc pode dirigir",name,age);
+       }else{
+           System.out.printf("%s vc tem %s e pode dirigir ",name,age);
+       }
+
 
     }
 }

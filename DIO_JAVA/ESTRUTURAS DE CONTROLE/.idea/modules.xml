@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Exercicios/Atividade1/Atividade1.iml" filepath="$PROJECT_DIR$/Exercicios/Atividade1/Atividade1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercicios/Atividade2/Atividade2.iml" filepath="$PROJECT_DIR$/Exercicios/Atividade2/Atividade2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercicios/Atividade3/Atividade3.iml" filepath="$PROJECT_DIR$/Exercicios/Atividade3/Atividade3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercicios/Atividade4/Atividade4.iml" filepath="$PROJECT_DIR$/Exercicios/Atividade4/Atividade4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ESTRUTURAS DE CONTROLE.iml" filepath="$PROJECT_DIR$/.idea/ESTRUTURAS DE CONTROLE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FOR/FOR.iml" filepath="$PROJECT_DIR$/FOR/FOR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IF_ELSE/IF_ELSE.iml" filepath="$PROJECT_DIR$/IF_ELSE/IF_ELSE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SWITCH_CASE/SWITCH_CASE.iml" filepath="$PROJECT_DIR$/SWITCH_CASE/SWITCH_CASE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WHILE/WHILE.iml" filepath="$PROJECT_DIR$/WHILE/WHILE.iml" />
+    </modules>
+  </component>
+</project>

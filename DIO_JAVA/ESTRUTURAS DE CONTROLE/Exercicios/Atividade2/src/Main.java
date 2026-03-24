@@ -3,30 +3,32 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
-        System.out.print("Digite seu nome: ");
-        String nome = scanner.nextLine();
-        System.out.print("Digite seu peso: ");
-        double peso = scanner.nextDouble();
-        System.out.print("Digite sua altura: ");
+        System.out.println("Informe seu nome:  ");
+        var name = scanner.nextLine();
+        System.out.println("Infrome sua altura");
         double altura = scanner.nextDouble();
+        System.out.println("Informe seu peso");
+        double peso = scanner.nextDouble();
+        scanner.close();
 
         double imc = peso/(altura*altura);
-        System.out.println("-------------------------");
-        System.out.printf("Resultado: %s\n", imc);
-        System.out.println("-------------------------");
-        if (imc <= 18.5) {
-            System.out.printf("Olá %s. Você está abaixo do peso", nome);
-        }else if (imc >= 18.6 && imc <= 24.9) {
-            System.out.printf("Olá %s. Você está no peso ideal", nome);
+
+        System.out.println("----------------");
+        System.out.println("SEU IMC É DE: " + imc);
+        System.out.println("----------------");
+        if (imc <= 18.5){
+            System.out.println("ABAIXO DO PESO");
+        } else if (imc >= 18.6 && imc <= 24.9) {
+            System.out.println("PESO IDEAL");
         } else if (imc >= 25 && imc <= 29.9) {
-            System.out.printf("Olá %s. Você está levente acima do peso", nome);
+            System.out.println("LEVEMENTE ACIMA DO PESO");
         } else if (imc >= 30 && imc <= 34.9) {
-            System.out.printf("Olá %s. Você está Grau de obesidade I", nome);
+            System.out.println("OBESIDADE GRAU I");
         } else if (imc >= 35 && imc <= 39.9) {
-            System.out.printf("Olá %s. Você está Grau de obesidade II (Severa)", nome);
-        }else if (imc >= 40) {
-            System.out.printf("Olá %s. Você está no Grau de obesidade III (Mórbida", nome);
+            System.out.println("OBESIDADE GRAU II");
+        }else{
+            System.out.println("OBESIDADE GRAU III");
         }
-        scanner.close();
+
     }
 }
