@@ -1,10 +1,12 @@
+import java.util.Objects;
 import static java.util.Objects.isNull;
+import static java.util.Objects.hash;
 
 public class User{
 
     private int id;
 
-    private String name;
+    private String name;;
 
     public User() {
     }
@@ -38,7 +40,13 @@ public class User{
     public boolean equals(final Object obj){
         if (obj == this) return true;
         if ((isNull(obj)) || (!(obj instanceof User user))) return false;
-        return this.id == user.getId() && Object.equals(user.getName(), this.name);
+        return this.id == user.getId() && Objects.equals(user.getName(), this.name);
     }
+
+    @Override
+    public int hashCode() {
+        return hash(this.id,this.name);
+    }
+
 }
 
